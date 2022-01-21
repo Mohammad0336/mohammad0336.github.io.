@@ -1,0 +1,83 @@
+.frame{
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 20px;
+    background-color: black;
+    height: 900px;
+    width: 40%;
+    border-radius: 5px;
+    position: fixed;
+}
+
+.image{
+    padding: 10px;
+    margin-top: 5%;
+    margin-left: 5%;
+    background-color: rgba(59, 55, 55, 0.5);
+    height: 80%;
+    width: 90%;
+    border-radius: 5px;
+    color: white;
+    position: relative;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    overflow-x: hidden; 
+    overflow-y: scroll;
+    text-align: left;
+}
+
+.bar{
+    padding-top: 20px;
+    margin-left: 5%;
+}
+
+i{
+    color: white;
+}
+
+i:hover{
+    cursor: pointer;
+    color: gray;
+}
+p.a{
+    padding-top: 20px;
+    padding-left: 4%;
+    color: white;
+    font-family:Papyrus;
+    font-size:larger;
+    text-decoration: bold;
+}
+
+img{
+    padding-top: 0px;
+    padding-bottom: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+hr{
+    border-color: white;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: black; 
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.image i:hover {
+    color: red;
+}
