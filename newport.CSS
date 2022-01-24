@@ -1,25 +1,23 @@
 .sidenav {
-    font-family: "Times New Roman", Times, serif;
-    height: 80%; /* Full-height: remove this if you want "auto" height */
-    width: 60px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #111; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
-    border-bottom-right-radius: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: black;
+  border: 2px solid black;
+  top: 960px;
+  width: 49%;
+  height: 30px;
+  color: #818181;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-left: 20px;
   }
 
   /* The navigation menu links */
   .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
+    padding: 10px 6px 6px 16px;
     font-size: 24px;
     text-align: center;
     color: #818181;
-    display: block;
   }
   
   /* When you mouse over the navigation links, change their color */
@@ -44,9 +42,9 @@
   .introp {
     padding-left: 10px;
     text-align: left; 
-    overflow-x:hidden; 
+    overflow-x: hidden; 
     overflow-y: scroll; 
-    height:800px; 
+    height: 600px; 
     width: 50%; 
     background-color: white; 
     margin-left: 25%; 
@@ -58,4 +56,24 @@
     text-align: left; 
     padding-left: 25%;
     padding-right: 25%;
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+          
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+           
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black; 
+  }
+          
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
   }
