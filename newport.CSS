@@ -1,10 +1,7 @@
 .sidenav {
-  margin-left: 25%;
-  margin-right: 25%;
+  margin: auto;
   background-color: black;
   border: 2px solid black;
-  top: 960px;
-  width: 49%;
   height: 30px;
   color: #818181;
   border-top-left-radius: 20px;
@@ -27,7 +24,8 @@
   
   /* Style page content */
   .main {
-    margin-left: 60px; /* Same as the width of the sidebar */
+    margin-left: 25%;
+    margin-right: 25%;
     padding: 0px 10px;
     align-items: center;
     text-align: center;
@@ -35,8 +33,6 @@
 
   .intro {
     text-align: left; 
-    margin-left: 25%;
-    margin-right: 25%;
   }
 
   .introp {
@@ -45,15 +41,12 @@
     overflow-x: hidden; 
     overflow-y: scroll; 
     height: 600px; 
-    width: 50%; 
     background-color: white; 
-    margin-left: 25%; 
-    margin-right: 25%;
     box-shadow: black 0px 0px 1px 1px;
   }
 
   .projects {
-    text-align: left; 
+    text-align: left;
     margin-left: 25%;
     margin-right: 25%;
   }
