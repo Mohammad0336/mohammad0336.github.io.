@@ -44,7 +44,7 @@
                     <h2>About</h2>
                     <hr style="margin-left: 0;">
 
-                    <p style="color: white;">My name is Mohammad, I'm studying to become a Software engineer. I'm currently in my 3rd year of university.</p>
+                    <p style="color: white;">My name is Mohammad, I'm studying to become a Software engineer. I'm currently in my final year of university.</p>
                     <p style="color: white;">I enjoy creating projects in the various languages I have learned. Projects that can be expanded on interest me.</p>
                     <p style="color: white;">On this page all projects will be improved in the future along with the page itself.</p>
                     <br>
@@ -72,10 +72,18 @@
 
         <div class="space"></div>
 
-        <div id="experience" style="width: 50%; padding-top: 200px;">
-
+        <div id="experience"  style="width: 80%; padding-top: 200px;">
             <h2>Experience</h2>
             <hr style="margin-left: 0;">
+
+            <!-- Tabs -->
+            <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'ProgramExperience')">Program Experience</button>
+            <button class="tablinks" onclick="openTab(event, 'ProfessionalExperience')">Professional Experience</button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="ProgramExperience" class="tabcontent">
             <p>Here are some programs and applications I have worked with:</p>
             
             <ul>
@@ -93,78 +101,75 @@
                 <li><i class="fa-solid fa-c"></i> C\C++</li>
             </ul>
             <p>I also have experience in software testing, software architecure, database management, and AI</p>
+            </div>
+
+            <div id="ProfessionalExperience" class="tabcontent">
+            <div class="header-container">
+                <div class="header-text">
+                    <h3>Bell Canada: May 2022 – Aug 2023</h3>
+                    <h4>Network Internship - Architecture and Engineering</h4>
+                    <h4>Mississauga, Ontario, Canada</h4>
+                </div>
+                <div class="header-image">
+                    <img src="bcl.jpg" alt="Bell Canada Logo" style="width: 100px; height: auto;">
+                </div>
+            </div>
+                <p>• Worked alongside the Radio Frequency, Wireless Home Internet, No Line of Sight, and Propagation Modelling
+                teams. To optimize overall accuracy in prediction of qualified homes</p>
+                <p>• Analysis and definition of the best propagation models for pre-qualification of Wireless Home Internet users</p>
+                <p>• Optimized machine learning model using Various Python Libraries, improving RSME by 25% points and increasing precision by 30%</p>
+                <p>• Optimized and developed universal MySQL database entries, to ensure all data shared across teams is consistent 
+                for cell tower information. reducing model error by 30%</p>
+
+            </div>
         </div>
+
 
         <div class="space"></div>
 
         <div id="projects" style="width: 80%; padding-top: 200px;">
 
             <h2>Personal Projects</h2>
-            <hr style="margin-left: 0;">            
 
-            <div class="container">
+            <!-- Tabs -->
+            <div class="tab2">
+            <button class="tablinks2" onclick="openTab2(event, 'CapstoneProject')">Capstone Project</button>
+            <button class="tablinks2" onclick="openTab2(event, 'AndroidProject')">Mobile Development Project</button>
+            <button class="tablinks2" onclick="openTab2(event, 'DistributedProject')">Distributed Systems Project</button>
+            </div>
 
-                <div>
-                    <header>
-                        <a href="https://github.com/JadEletry/GameKnight" class="fa fa-github"></a>
-                    </header>
-                    <h3>GameKnight</h3>
+            <div id="CapstoneProject" class="tabcontent2">
+                <h3>Capstone Adaptive Cruise Control</h3>
+                <h4>Applications Utilizeds | Ros, C++, Autoware, Python, YOLO, IoT, Linux</h4>
+                <p>• Led a group in the development of software that can emulate adaptive cruise control functionality</p>
+                <p>• This project looks into the ROS and Autoware frameworks to automate a specific function [Adaptive Cruise Control] in the environment</p>
+                <p>• Designed and deployed extensions to the Autoware framework to allow platooning functionality longitudinal, and
+                lateral-longitudinal.</p>
+                <p>• Implemented a real-time perception from depth and LiDAR cameras to allow real vehicles to adaptive to
+                intermediate vehicles</p>
+                <p>• Leveraged Git version control for effective collaboration, version management, and project tracking.</p>
 
-                    <p>A website designed to allocate tuples of game's information found through an API into set categories. Built using:</p>
-                    <ul>
-                        <li>Html</li>
-                        <li>CSS</li>
-                        <li>Python</li>
-                        <li>Django</li>
-                        <li>SQL Database</li>
-                        <li>APIs</li>
-                    </ul>
-                </div>
+            </div>
 
-                <div>
-                    <header>
-                        <a href="https://github.com/Mohammad0336/Jeopardy" class="fa fa-github"></a>
-                    </header>
-                    <h3>Jeopardy</h3>
+            <div id="AndroidProject" class="tabcontent2">
+                <h3>SmartPlay Sports App</h3>
+                <h4>Applications Utilizeds | Android SDK, Java, SQL, APIs</h4>
+                <p>• Led a group in the development of a Android application SmartPlay Sports.</p>
+                <p>• A mobile platform designed to cater to the needs and interests of sports enthusiasts, athletes, and fans.</p>
+                <p>• Leverage various APIs to attain relevant up to date sports information to fill the application and provide appropriate
+                insight</p>
+                <p>• Leveraged Git version control for effective collaboration, version management, and project tracking.</p>
+            </div>
 
-                    <p>Jeopardy: a command line version of Jeopardy which can support up to four players created using C. Built using:</p>
-                    <ul>
-                        <li>C</li>
-                        <li>MakeFile</li>
-                        <li>Linux</li>
-                    </ul>
-
-                </div>
-
-                <div>
-                    <header>
-                        <a href="https://github.com/Mohammad0336/Spacestagram" class="fa fa-github"></a>
-                    </header>
-                    <h3>Spacestagram</h3>
-
-                    <p>Using Public NASA API an image browsing front-end was made to resemble a social media like Instagram's front-end. Built using:</p>
-                    <ul>
-                        <li>Html</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>API</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <header>
-                        <a href="https://github.com/Mohammad0336/Paint_Application" class="fa fa-github"></a>
-                    </header>
-                    <h3>Paint</h3>
-
-                    <p>Paint application made using the canvas feature in visual studio code DOCTYPE html. Built using:</p>
-                    <ul>
-                        <li>Html</li>
-                        <li>Css</li>
-                        <li>JavaScript</li>
-                    </ul>
-                </div>
-
+            <div id="DistributedProject" class="tabcontent2">
+                <h3>P2P Distributed Social Network</h3>
+                <h4>Applications Utilizeds |  Blockchain, Asymmetric Encryption, Java, SQLite</h4>
+                <p>• Contributed to a GitHub repository in developing a peer-to-peer system. Played an active role in the development of
+                a cutting-edge, secure communication system.</p>
+                <p>• Utilized blockchain technology to enhance secure communication between peers</p>
+                <p>• led the development of the frontend of the P2P system. Aided in the back-end with peer detection and posting
+                features amongst local peers</p>
+                <p>• Leveraged Git version control for effective collaboration, version management, and project tracking.</p>
             </div>
 
         </div>
@@ -177,7 +182,7 @@
 
     <div class="linkbar">
         <ul>
-            <li><a href="https://www.linkedin.com/in/mohammadhamza-asif-b16056230/" class="fa fa-linkedin"></a></li>
+            <li><a href="https://www.linkedin.com/in/mohammad-hamza-asif/" class="fa fa-linkedin"></a></li>
             <li><a href="https://github.com/Mohammad0336" class="fa fa-github"></a></li>
         </ul>
     </div>
@@ -186,3 +191,40 @@
 </body>
 
 </html>
+
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Open the first tab by default
+document.getElementsByClassName("tablinks")[0].click();
+
+function openTab2(evt, tabName2) {
+  var i, tabcontent2, tablinks2;
+  tabcontent2 = document.getElementsByClassName("tabcontent2");
+  for (i = 0; i < tabcontent2.length; i++) {
+    tabcontent2[i].style.display = "none";
+  }
+  tablinks2 = document.getElementsByClassName("tablinks2");
+  for (i = 0; i < tablinks2.length; i++) {
+    tablinks2[i].className = tablinks2[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName2).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Open the first tab by default
+document.getElementsByClassName("tablinks2")[0].click();
+
+</script>
