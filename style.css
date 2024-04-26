@@ -52,7 +52,7 @@ body {
 }
   
 .linkbar .fa:hover {
-    color: #EE82EE; /* Specific to the linkbar class */
+    color: #EE82EE; 
 }
 
 .linkbar ul {
@@ -101,17 +101,17 @@ background: #555;
     align-items: center;
     height: 100vh;
     padding-left: 15%;
-    background-color: #0a192f; /* Match with your color theme */
-    color: white; /* This should be a color that contrasts with the background */
+    background-color: #0a192f; 
+    color: white; 
 }
 
 .home-content {
-    max-width: 80%; /* Adjust width as needed */
+    max-width: 80%; 
 }
 
 .home-greeting {
     font-size: 2rem;
-    color: #EE82EE; /* This is a bright color for the greeting text, adjust as needed */
+    color: #EE82EE; 
 }
 
 .home-content h1 {
@@ -122,13 +122,13 @@ background: #555;
 .home-content h2 {
     font-size: 4rem;
     font-weight: 400;
-    color: #ccd6f6; /* Lighter text color for the subtitle */
+    color: #ccd6f6; 
     margin: 0.5rem 0;
 }
 
 .home-description {
     margin-bottom: 3rem;
-    color: #8892b0; /* Adjust the color for description */
+    color: #8892b0; 
 }
 
 /* About Frame */
@@ -138,17 +138,17 @@ background: #555;
     align-items: center;
     height: 100vh;
     padding-left: 15%;
-    background-color: #0a192f; /* Match with your color theme */
-    color: white; /* This should be a color that contrasts with the background */
+    background-color: #0a192f; 
+    color: white;
 }
 
 .about-content {
-    max-width: 80%; /* Adjust width as needed */
+    max-width: 80%; 
 }
 
 .about-greeting {
     font-size: 2rem;
-    color: #EE82EE; /* This is a bright color for the greeting text, adjust as needed */
+    color: #EE82EE; 
 }
 
 .about-content h1 {
@@ -159,38 +159,37 @@ background: #555;
 .about-content h2 {
     font-size: 1.5rem;
     font-weight: 400;
-    color: #ccd6f6; /* Lighter text color for the subtitle */
+    color: #ccd6f6; 
     margin: 0.5rem 0;
 }
 
 .about-description {
     margin-bottom: 0rem;
-    color: white; /* Adjust the color for description */
+    color: white;
 }
 
 /* Experience Frame */
 
 .horizontal-navbar ul {
-    list-style-type: none; /* Remove default list styling */
-    margin: 0; /* Remove default margins */
-    padding: 0; /* Remove default padding */
-    overflow: hidden; /* Clear floats */
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
     font-weight: bold;
 }
 
 .horizontal-navbar li {
-    float: left; /* Place the navigation items inline */
+    float: left; 
 }
 
 .horizontal-navbar li a {
-    display: block; /* Change the links to block elements to fill the li */
-    color: white; /* Text color */
-    text-align: center; /* Center the text */
-    padding: 14px 16px; /* Add some padding */
-    text-decoration: none; /* Remove underline from links */
+    display: block; 
+    color: white; 
+    text-align: center; 
+    padding: 14px 16px; 
+    text-decoration: none; 
 }
 
-/* Add hover effects if needed */
 .horizontal-navbar li a:hover {
     color: #EE82EE;
 }
@@ -199,7 +198,7 @@ background: #555;
     display: none;
     padding: 6px 12px;
     color: white;
-    max-width: 100%; /* Adjust width as needed */
+    max-width: 100%; 
 }
 
 .tablinks.active {
@@ -212,8 +211,8 @@ background: #555;
     align-items: center;
     height: 100vh;
     padding-left: 15%;
-    background-color: #0a192f; /* Match with your color theme */
-    color: white; /* This should be a color that contrasts with the background */
+    background-color: #0a192f; 
+    color: white; 
 }
 
 .experience h3 {
@@ -224,7 +223,7 @@ background: #555;
 .experience h4 {
     font-size: 1.5rem;
     font-weight: 400;
-    color: #ccd6f6; /* Lighter text color for the subtitle */
+    color: #ccd6f6; 
     margin: 0.5rem 0;
 }
 
@@ -235,17 +234,17 @@ background: #555;
     align-items: center;
     height: 100vh;
     padding-left: 15%;
-    background-color: #0a192f; /* Match with your color theme */
-    color: white; /* This should be a color that contrasts with the background */
+    background-color: #0a192f; 
+    color: white; 
 }
 
 .projects-content {
-    max-width: 100%; /* Adjust width as needed */
+    max-width: 100%; 
 }
 
 .projects-greeting {
     font-size: 2rem;
-    color: #EE82EE; /* This is a bright color for the greeting text, adjust as needed */
+    color: #EE82EE; 
 }
 
 .projects-content h1 {
@@ -256,25 +255,23 @@ background: #555;
 .projects-content h2 {
     font-size: 1.5rem;
     font-weight: 400;
-    color: #ccd6f6; /* Lighter text color for the subtitle */
+    color: #ccd6f6; 
     margin: 0.5rem 0;
 }
 
 .projects-description {
     margin-bottom: 0rem;
-    color: white; /* Adjust the color for description */
+    color: white;
 }
 
 .grid {
     display: grid;
-    /* Change to a fixed size for columns */
     grid-template-columns: repeat(auto-fit, 250px); 
     grid-gap: 20px; 
     padding: 50px; 
 }
 
 .grid__item {
-    /* Set a fixed height to ensure consistent size */
     height: 300px; 
     width: 330px; 
     border: 1px solid #ccc; 
