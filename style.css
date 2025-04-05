@@ -293,7 +293,7 @@ background: #555;
 
 .grid__item {
     /* Set a fixed height to ensure consistent size */
-    height: 300px;
+    height: 350px;
     width: 330px;
     flex: 0 0 auto; 
     border: 1px solid #ccc; 
