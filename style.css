@@ -7,22 +7,25 @@ body {
 }
 
 .navbar {
-    padding-top: 50px;
-    padding-left: 75%;
-    padding-right: 50px;
-    padding-bottom: 50px;
+    
+    /* padding-left: 75%; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     font-size: 1.2em;
     gap: 20px;
+    padding: 50px 50px 50px 50px;
     width: 100%;
     list-style: none;
-    display: flex;
-    position: fixed;
     width: 100%;
+    position: fixed;
     color: white;
     background-color: #0e1c30c9;
     font-family: monospace;
     z-index: 1;
     border-bottom: 3px black;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .navbar a {
@@ -33,12 +36,6 @@ body {
 
 .navbar a:hover {
     color: #EE82EE;
-}
-
-@media (max-width: 768px){
-    .navbar {
-        display: none;
-    }
 }
 
 .fa {
@@ -52,7 +49,7 @@ body {
 }
   
 .linkbar .fa:hover {
-    color: #EE82EE; 
+    color: #EE82EE; /* Specific to the linkbar class */
 }
 
 .linkbar ul {
@@ -99,7 +96,7 @@ background: #555;
 .home {
     display: flex;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     padding-left: 15%;
     background-color: #0a192f; 
     color: white; 
@@ -136,10 +133,10 @@ background: #555;
 .about {
     display: flex;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     padding-left: 15%;
     background-color: #0a192f; 
-    color: white;
+    color: white; 
 }
 
 .about-content {
@@ -159,7 +156,7 @@ background: #555;
 .about-content h2 {
     font-size: 1.5rem;
     font-weight: 400;
-    color: #ccd6f6; 
+    color: #ccd6f6;
     margin: 0.5rem 0;
 }
 
@@ -171,23 +168,32 @@ background: #555;
 /* Experience Frame */
 
 .horizontal-navbar ul {
-    list-style-type: none; 
-    margin: 0; 
-    padding: 0; 
-    overflow: hidden; 
-    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap; /* keep everything in one line */
+    list-style-type: none;
+    margin: 0;
+    padding: 0 10px;
+    overflow-x: auto; /* allow scrolling if too many items */
+    gap: 5px; /* space between links */
 }
 
 .horizontal-navbar li {
-    float: left; 
+    flex: 1 1 auto; /* allow items to shrink */
+    text-align: center;
+    min-width: 0; /* allow shrinking below text width */
 }
 
 .horizontal-navbar li a {
-    display: block; 
-    color: white; 
-    text-align: center; 
-    padding: 14px 16px; 
-    text-decoration: none; 
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* optional: show ... if really tight */
 }
 
 .horizontal-navbar li a:hover {
@@ -198,7 +204,7 @@ background: #555;
     display: none;
     padding: 6px 12px;
     color: white;
-    max-width: 100%; 
+    max-width: 100%; /* Adjust width as needed */
 }
 
 .tablinks.active {
@@ -208,11 +214,19 @@ background: #555;
 
 .experience {
     display: flex;
-    align-items: center;
-    height: 100vh;
-    padding-left: 15%;
-    background-color: #0a192f; 
-    color: white; 
+    flex-direction: column;   /* stack content vertically */
+    justify-content: center;  /* center vertically */
+    align-items: flex-start;  /* align to left */
+    min-height: 100vh;
+    padding: 0 15%;           /* horizontal padding only */
+    background-color: #0a192f;
+    color: white;
+    box-sizing: border-box;
+}
+
+.experience-content {
+    width: 100%;
+    max-width: 100%;
 }
 
 .experience h3 {
@@ -223,7 +237,7 @@ background: #555;
 .experience h4 {
     font-size: 1.5rem;
     font-weight: 400;
-    color: #ccd6f6; 
+    color: #ccd6f6; /* Lighter text color for the subtitle */
     margin: 0.5rem 0;
 }
 
@@ -232,48 +246,56 @@ background: #555;
 .projects {
     display: flex;
     align-items: center;
-    height: 100vh;
+    padding-top: 80px;
+    min-height: 100vh;
     padding-left: 15%;
-    background-color: #0a192f; 
-    color: white; 
+    background-color: #0a192f; /* Match with your color theme */
+    color: white; /* This should be a color that contrasts with the background */
 }
 
 .projects-content {
-    max-width: 100%; 
+    width: 100%;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .projects-greeting {
     font-size: 2rem;
-    color: #EE82EE; 
+    color: #EE82EE; /* This is a bright color for the greeting text, adjust as needed */
 }
 
 .projects-content h1 {
-    font-size: 2rem;
+    font-size: 2.5rem; /* default large */
     margin: 0.1rem 0;
 }
 
 .projects-content h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 400;
-    color: #ccd6f6; 
+    color: #ccd6f6;
     margin: 0.5rem 0;
 }
 
 .projects-description {
-    margin-bottom: 0rem;
+    font-size: 1rem;
     color: white;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 250px); 
-    grid-gap: 20px; 
-    padding: 50px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 20px;
+    padding: 50px;
 }
 
 .grid__item {
-    height: 300px; 
-    width: 330px; 
+    /* Set a fixed height to ensure consistent size */
+    height: 300px;
+    width: 330px;
+    flex: 0 0 auto; 
     border: 1px solid #ccc; 
     padding: 20px; 
     border-radius: 5px; 
@@ -341,3 +363,108 @@ background: #555;
         }
     }
 }
+
+.grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: white; /* Bright violet to match your theme */
+    width: 100%;
+    margin: 20px 0;
+}
+
+.mobile-social-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+
+   
+    .navbar {
+        display: none;
+    }
+    
+    body {
+      font-size: 16px;
+      padding: 0;
+      margin: 0;
+      overflow-x: hidden;
+    }
+  
+    section {
+      padding: 60px 5%;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column; /* Stack instead of row */
+        align-items: center; /* Center items */
+        justify-content: left;
+        padding-left: 5%;
+        width: 100%; /* Ensure it fits in the screen */
+    }
+
+    .grid {
+        justify-content: center; /* Ensure it's centered */
+        width: 80%; /* Make sure it takes full width */
+        padding: 20px; /* Add smaller padding for mobile */
+    }
+
+    .grid__item {
+        width: 100%; /* Ensure individual project cards fit */
+        text-align: center;
+    }
+  
+    .home h1,
+    .about-content h1,
+    .experience-content h1,
+    .projects-content h1 {
+      font-size: 1.8rem;
+    }
+  
+    .home h2 {
+        font-size: 2.5rem;
+    }
+    .about-content p,
+    .projects-description,
+    .experience-content p {
+      font-size: 1rem;
+    }
+  
+    .horizontal-navbar {
+      flex-direction: column;
+      gap: 0.5rem;
+      font-size: 1rem;
+      width: 100%;
+    }
+  
+    .experience,
+    .projects,
+    .about {
+      padding-left: 5%;
+      padding-right: 5%;
+      align-items: center;
+    }
+  
+    .tabcontent {
+      font-size: 0.95rem;
+    }
+
+    .linkbar {
+        display: none;
+    }
+  
+    hr {
+      width: 80%;
+    }
+
+}
+  
